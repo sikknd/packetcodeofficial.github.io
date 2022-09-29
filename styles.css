@@ -52,7 +52,7 @@ nav {
 .navlink {
     margin-right: 20px;
     padding: 10px;
-    color: rgb(248, 249, 249);
+    color: var(--text-color);
     text-shadow: 1px 1px #000000;
     -webkit-transition: 0.2s ease-in-out;
 }
@@ -60,6 +60,15 @@ nav {
 
 .navlink:hover {
     background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+    .navlink {
+        margin: 0;
+    }
 }
 
 /*welcome*/
@@ -118,6 +127,20 @@ a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 700px) {
+    #welcome-section {
+        min-width: 100vh;
+    }
+    .me {
+        width: 20em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .pp {
+        font-size: 0.9em;
+    }
+}
 
 
 
