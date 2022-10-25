@@ -1,6 +1,5 @@
 
 copyBtn = document.querySelector(".copy"),
-facebookBtn = document.querySelector(".facebook"),
 twitterBtn = document.querySelector(".twitter");
 
 let quotes = [

@@ -12,14 +12,14 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(oldPaper.jpg);
+    background-image: url(https://sikknd.github.io/quotegen/oldpaper.jpg);
     background-size: cover;
 }
 
 .wrapper {
     width: 605px;
-    background-color: rgba(38, 38, 38,.9);
-    color: #fff;
+    background-color: rgba(22, 21, 21, 0.963);
+    color: rgb(171, 146, 66);
     border-radius: 15px;
     padding: 30px 30px 25px;
 }
@@ -61,7 +61,7 @@ body{
 
 
 .wrapper .buttons{
-    border-top: 1px solid #ccc;
+    border-top: 1px solid rgb(171, 146, 66);
 }
 
 .buttons .features{
@@ -82,17 +82,17 @@ body{
     width: 47px;
     display: flex;
     cursor: pointer;
-    color: #5372F0;
+    color: rgb(171, 146, 66);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid #5372F0;
+    border: 2px solid rgb(171, 146, 66);
     transition: all 0.3s ease;
 }
 
 .features ul li:hover{
     color: #fff;
-    background: #5372F0;
+    background: rgb(171, 146, 66);
 }
 
 .features button{
@@ -103,7 +103,7 @@ body{
     font-style: 16px;
     padding: 13px 22px;
     border-radius: 30px;
-    background: #5372F0;
+    background: rgb(171, 146, 66);
 }
 
 button.loading {
