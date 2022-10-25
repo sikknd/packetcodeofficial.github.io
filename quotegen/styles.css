@@ -59,6 +59,19 @@ body{
     word-break: normal;
 }
 
+.content .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.author span:first-child{
+    margin: -10px 5px 0 0;
+    font-family: monospace;
+}
+
 
 .wrapper .buttons{
     border-top: 1px solid rgb(171, 146, 66);
