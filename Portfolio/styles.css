@@ -1,0 +1,282 @@
+:root {
+    --lightred: rgb(197, 45, 65);
+    --background-color: rgb(56, 54, 87);
+    --text-color: rgb(214, 214, 214);
+    --blackish: rgb(42, 42, 42);
+}
+
+
+/*scroller*/
+::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--blackish);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-color);
+}
+/*scroller end*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*menu*/
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--lightred);
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navlink {
+    margin-right: 20px;
+    font-size: 2.2em;
+    padding: 10px;
+    color: var(--text-color);
+    text-shadow: 1px 1px #000000;
+    -webkit-transition: 0.2s ease-in-out;
+}
+
+
+
+.navlink:hover {
+    background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+    .navlink {
+        margin: 0;
+    }
+}
+
+/*welcome*/
+
+#welcome-section {
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--blackish);
+    text-shadow: 1px 1px #000000;
+}
+
+.me {
+    width: 400px;
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem var(--lightred),
+    0 0 0.8rem var(--lightred),
+    0 0 2.8rem var(--lightred),
+    inset 0 0 1.3rem var(--lightred);   
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.pp {
+    font-size: 25px;
+    color: var(--lightred);
+    font-style: italic;
+}
+
+.stack {
+    width: 250px;
+    margin-top: 50px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #welcome-section {
+        min-width: 100vh;
+    }
+    .me {
+        width: 20em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .pp {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+/*projects*/
+
+.project-title {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project-tile img {
+    width: 400px;
+    height: 370px;
+    border-top: 3px solid var(--blackish);
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 50px;
+    color: var(--text-color);
+    text-shadow: 2px 2px #000000;
+}
+
+.projects-grid {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 409px);
+    justify-content: center;
+}
+
+.project-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--blackish);
+    padding-bottom: 10px;
+}
+
+.project-title {
+    color: var(--text-color);
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.code {
+    font-size: 20px;
+    color: var(--blackish);
+    -webkit-transition: 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+    color: var(--lightred);
+}
+
+
+/*the contacts*/
+
+
+.contact {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blackish);
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 1px 1px #000000;
+}
+
+.arrow {
+    margin-top: 40px;
+    margin-bottom: 120px;
+    font-size: 75px;
+    color: var(--background-color);
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    color: antiquewhite;
+}
+
+.contact-buttons {
+    font-size: 30px;
+    text-shadow: 2px 2px #000000;
+    margin: 20px;
+    -webkit-transition: 0.3s ease-out;
+}
+
+.contact-buttons:hover {
+    margin-top: 10px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 70px;
+    border-top: 5px solid rgb(182, 37, 56);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 30px 30px;
+}
