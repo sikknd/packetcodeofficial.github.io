@@ -1,3 +1,7 @@
+copyBtn = document.querySelector(".copy")
+twitterBtn = document.querySelector(".twitter")
+quoteBtn = document.querySelector("button");
+
 const generateQuote = function() {
     const quotes = [
     {
@@ -219,5 +223,18 @@ const generateQuote = function() {
 }
 window.onload = function() {
     generateQuote();
-    document.getElementById("btn").addEventListener('click', generateQuote);
+    quoteBtn.classList.add("loading");
+    quoteBtn.innerText = "Зареждане...";
+    quoteBtn.addEventListener('click', generateQuote);
+    quoteBtn.innerText = "Нов Цитат";
+    quoteBtn.classList.remove("loading");
 }
+
+copyBtn.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(quotes.innerText);
+});
+
+twitterBtn.addEventListener("click", ()=>{
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${quotes.innerText}`;
+    window.open(tweetUrl, "_blank");
+});
