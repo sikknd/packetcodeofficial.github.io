@@ -223,11 +223,7 @@ const generateQuote = function() {
 }
 window.onload = function() {
     generateQuote();
-    quoteBtn.classList.add("loading");
-    quoteBtn.innerText = "Зареждане...";
     quoteBtn.addEventListener('click', generateQuote);
-    quoteBtn.innerText = "Нов Цитат";
-    quoteBtn.classList.remove("loading");
 }
 
 copyBtn.addEventListener("click", ()=>{
